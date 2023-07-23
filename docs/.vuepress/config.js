@@ -22,6 +22,10 @@ module.exports = {
                                 link: '/plan/2023/'
                             },
                             {
+                                text: '2023年进展',
+                                link: '/plan/2023/progress.html'
+                            },
+                            {
                                 text: '我的进展',
                                 link: '/plan/2023/progress.html'
                             }
@@ -128,6 +132,7 @@ module.exports = {
                     children: [
                         ['', '我的书单'],
                         ['天朝的崩溃', '天朝的崩溃'],
+                        ['西方现代思想讲义', '西方现代思想讲义'],
                     ]
                 }
             ],

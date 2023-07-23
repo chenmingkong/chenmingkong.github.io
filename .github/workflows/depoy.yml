@@ -1,0 +1,30 @@
+# 显示得workflow名称
+name: pages deploy
+on:
+  # 推送到master分支开始打包
+  push:
+    branches:
+      - master
+
+jobs:
+  # 开始打包
+  Build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout code
+      # 迁出触发的流程的版本 能让下面的工作流程访问
+      uses: actions/checkout@v2
+      # setup-node 可以提供node环境，指定node版本以及 npm /yarn缓存
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16.x'
+    - name: Install dependencies
+      run: yarn install
+    - name: build
+      run: yarn add -D vuepress && yarn docs:build
+    - name: deploy
+      uses: JamesIves/github-pages-deploy-action@v4.2.3
+      with:
+        branch: gh-pages
+        folder: docs/.vuepress/dist   # build后文件目录

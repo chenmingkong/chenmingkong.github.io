@@ -15,18 +15,14 @@ module.exports = {
                 ariaLabel: '更多规划',
                 items: [
                     {
-                        text: '2023年计划',
+                        text: '规划模板',
+                        link: '/plan/'
+                    },
+                    {
+                        text: '年度计划',
                         items: [
                             {
-                                text: '整体规划',
-                                link: '/plan/2023/'
-                            },
-                            {
                                 text: '2023年进展',
-                                link: '/plan/2023/progress.html'
-                            },
-                            {
-                                text: '我的进展',
                                 link: '/plan/2023/progress.html'
                             }
                         ]

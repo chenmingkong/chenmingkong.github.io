@@ -11,14 +11,6 @@ https://chenmingkong.github.io/knowledge-management
 
 ## 发布部署
 
-### linux
+部署使用actions+pages
 
-```bash
-bash deploy.sh
-```
-
-### windows
-
-```bat
-deploy.bat
-```
+- actions文件为`.github/workflows/depoy.yml`，代码提交至master后，自动触发，编译后push到`gh-pages`分支，pages在github中自动关联`gh-pages`分支

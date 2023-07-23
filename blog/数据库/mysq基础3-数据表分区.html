@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1. 索引和分区 | 知识管理</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/cainiao404.png">
+    <meta name="description" content="我的日常记录">
+    
+    <link rel="preload" href="/assets/css/0.styles.e8e4f3a3.css" as="style"><link rel="preload" href="/assets/js/app.cba0774c.js" as="script"><link rel="preload" href="/assets/js/2.733019b2.js" as="script"><link rel="preload" href="/assets/js/45.83640054.js" as="script"><link rel="prefetch" href="/assets/js/10.96574c55.js"><link rel="prefetch" href="/assets/js/11.44736c90.js"><link rel="prefetch" href="/assets/js/12.adff8250.js"><link rel="prefetch" href="/assets/js/13.8e2dcc30.js"><link rel="prefetch" href="/assets/js/14.22684078.js"><link rel="prefetch" href="/assets/js/15.15ba2d09.js"><link rel="prefetch" href="/assets/js/16.52800467.js"><link rel="prefetch" href="/assets/js/17.c1d71ca5.js"><link rel="prefetch" href="/assets/js/18.a5a29cdc.js"><link rel="prefetch" href="/assets/js/19.cdc065bf.js"><link rel="prefetch" href="/assets/js/20.3d20dfea.js"><link rel="prefetch" href="/assets/js/21.05e0645e.js"><link rel="prefetch" href="/assets/js/22.af417190.js"><link rel="prefetch" href="/assets/js/23.a958260c.js"><link rel="prefetch" href="/assets/js/24.29cb8cd7.js"><link rel="prefetch" href="/assets/js/25.0836694e.js"><link rel="prefetch" href="/assets/js/26.5f0988d7.js"><link rel="prefetch" href="/assets/js/27.2a16a56a.js"><link rel="prefetch" href="/assets/js/28.5a479424.js"><link rel="prefetch" href="/assets/js/29.0b1e1afc.js"><link rel="prefetch" href="/assets/js/3.bea145f6.js"><link rel="prefetch" href="/assets/js/30.bb2274d8.js"><link rel="prefetch" href="/assets/js/31.b036c2f4.js"><link rel="prefetch" href="/assets/js/32.7e4e6d55.js"><link rel="prefetch" href="/assets/js/33.2326f836.js"><link rel="prefetch" href="/assets/js/34.74159583.js"><link rel="prefetch" href="/assets/js/35.471e0555.js"><link rel="prefetch" href="/assets/js/36.9fe695d0.js"><link rel="prefetch" href="/assets/js/37.c7e9965a.js"><link rel="prefetch" href="/assets/js/38.5da79a05.js"><link rel="prefetch" href="/assets/js/39.0767950d.js"><link rel="prefetch" href="/assets/js/4.d12742be.js"><link rel="prefetch" href="/assets/js/40.225166d1.js"><link rel="prefetch" href="/assets/js/41.08339cc7.js"><link rel="prefetch" href="/assets/js/42.594b9519.js"><link rel="prefetch" href="/assets/js/43.f00c4e7c.js"><link rel="prefetch" href="/assets/js/44.9ae95d6b.js"><link rel="prefetch" href="/assets/js/46.ed9f5adf.js"><link rel="prefetch" href="/assets/js/47.27158d35.js"><link rel="prefetch" href="/assets/js/48.ec5cbdf0.js"><link rel="prefetch" href="/assets/js/49.80ae1e8d.js"><link rel="prefetch" href="/assets/js/5.216cae74.js"><link rel="prefetch" href="/assets/js/50.1de8c741.js"><link rel="prefetch" href="/assets/js/51.75a776b0.js"><link rel="prefetch" href="/assets/js/52.5e63b022.js"><link rel="prefetch" href="/assets/js/53.20f46f6c.js"><link rel="prefetch" href="/assets/js/54.5a07662e.js"><link rel="prefetch" href="/assets/js/55.8e005133.js"><link rel="prefetch" href="/assets/js/56.329b172d.js"><link rel="prefetch" href="/assets/js/57.42257158.js"><link rel="prefetch" href="/assets/js/58.2f3723cc.js"><link rel="prefetch" href="/assets/js/59.bb3c191c.js"><link rel="prefetch" href="/assets/js/6.2d0a63f8.js"><link rel="prefetch" href="/assets/js/7.9c9172a7.js"><link rel="prefetch" href="/assets/js/8.c8c7f44e.js"><link rel="prefetch" href="/assets/js/9.bbb74940.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e8e4f3a3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/cainiao404.png" alt="知识管理" class="logo"> <span class="site-name can-hide">知识管理</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">
+  技术博客
+</a></div><div class="nav-item"><a href="/read/" class="nav-link">
+  读书分享
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多规划" class="dropdown-title"><span class="title">更多规划</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多规划" class="mobile-dropdown-title"><span class="title">更多规划</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          2023年计划
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/plan/2023/" class="nav-link">
+  整体规划
+</a></li><li class="dropdown-subitem"><a href="/plan/2023/progress.html" class="nav-link">
+  我的进展
+</a></li></ul></li></ul></div></div> <a href="https://github.com/chenmingkong/chenmingkong.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">
+  技术博客
+</a></div><div class="nav-item"><a href="/read/" class="nav-link">
+  读书分享
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多规划" class="dropdown-title"><span class="title">更多规划</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多规划" class="mobile-dropdown-title"><span class="title">更多规划</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          2023年计划
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/plan/2023/" class="nav-link">
+  整体规划
+</a></li><li class="dropdown-subitem"><a href="/plan/2023/progress.html" class="nav-link">
+  我的进展
+</a></li></ul></li></ul></div></div> <a href="https://github.com/chenmingkong/chenmingkong.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>C语言</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Go语言</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Java语言</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Python语言</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>前端</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>容器</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>数据库</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/数据库/mysq基础1-安装、常用命令、慢查询设置.html" class="sidebar-link">mysq基础1-安装、常用命令、慢查询设置</a></li><li><a href="/blog/数据库/mysq基础2-经典运维工具percona-toolkit.html" class="sidebar-link">mysq基础2-经典运维工具percona-toolkit</a></li><li><a href="/blog/数据库/mysq基础3-数据表分区.html" class="active sidebar-link">mysq基础3-数据表分区</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/数据库/mysq基础3-数据表分区.html#_1-索引和分区" class="sidebar-link">1. 索引和分区</a></li><li class="sidebar-sub-header"><a href="/blog/数据库/mysq基础3-数据表分区.html#_2-案例1-正常分区" class="sidebar-link">2. 案例1（正常分区）</a></li><li class="sidebar-sub-header"><a href="/blog/数据库/mysq基础3-数据表分区.html#_3-案例2-特殊场景" class="sidebar-link">3. 案例2（特殊场景）</a></li></ul></li><li><a href="/blog/数据库/mysql基础4-mysql执行过程查看.html" class="sidebar-link">mysql基础4-mysql执行过程查看</a></li><li><a href="/blog/数据库/mysql基础5-索引及慢查询优化.html" class="sidebar-link">mysql基础5-索引及慢查询优化</a></li><li><a href="/blog/数据库/mysql基础6-范式和反范式.html" class="sidebar-link">mysql基础6-范式和反范式</a></li><li><a href="/blog/数据库/mysql基础7-innodb存储引擎介绍.html" class="sidebar-link">mysql基础7-innodb存储引擎介绍</a></li><li><a href="/blog/数据库/mysql基础8-xtrbackup数据备份工具.html" class="sidebar-link">mysql基础8-xtrbackup数据备份工具</a></li><li><a href="/blog/数据库/mysql基础9-事务和锁.html" class="sidebar-link">mysql基础9-事务和锁</a></li><li><a href="/blog/数据库/nysql高可用方案.html" class="sidebar-link">nysql高可用方案</a></li><li><a href="/blog/数据库/一次痛苦的数据库优化.html" class="sidebar-link">一次痛苦的数据库优化</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>常见工具</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="_1-索引和分区"><a href="#_1-索引和分区" class="header-anchor">#</a> 1. 索引和分区</h2> <p>分区和索引作为一个常见的数据库效率提高手段。本文基于实际场景进行简单的分析和整理。</p> <blockquote><p>索引和分区的关系</p></blockquote> <p>mysql分区后每个分区成了独立的文件，虽然从逻辑上还是一张表其实已经分成了多张独立的表，由于Innodb数据和索引都是保存在&quot;.ibd&quot;文件当中（从INNODB_SYS_INDEXES系统表中也可以得到每个索引都是对应各自的分区(primary key和unique也不例外）），所以分区表的索引也是随着各个分区单独存储。</p> <p>在INNODB_SYS_INDEXES系统表中:</p> <p>type代表索引的类型，当我们在分区表中创建索引时其实也是在每个分区中创建索引，每个分区维护各自的索引（其实也就是local index）</p> <div class="language- extra-class"><pre class="language-text"><code>0:一般的索引(非主键或者唯一)：
+1:(GEN_CLUST_INDEX)不存在主键索引的表,会自动生成一个6个字节的标示值
+2:unique索引
+3:primary索引;
+</code></pre></div><blockquote><p>当具有索引的表进行分区的时候</p></blockquote> <p>对于一般的索引(非主键或者唯一)没什么问题，由于索引树中只保留了索引key和主键key(如果存在主键则是主键的key否则就是系统自动生成的6个的key)不受分区的影响；但是如果表中存在主键就不一样了，虽然在每个分区文件中都存在主键索引但是主键索引需要保证全局的唯一性就是所有分区中的主键的值都必须唯一（唯一键也是一样的道理），<strong>所以在创建分区时如果表中存在主键或者唯一键那么分区列必须包含主键或者唯一键的部分或者全部列</strong>（全部列还好理解，部分列也可以个人猜测是为了各个分区和主键建立关系），由于需要保证全局性又要保证插入数据更新数据到具体的分区所以就需要将分区和主键建立关系,由于通过一般的索引进行查找其它非索引字段需要通过主键如果主键不能保证全局唯一性的话那么就需要去每个分区查找了，这样性能可想而知。</p> <h2 id="_2-案例1-正常分区"><a href="#_2-案例1-正常分区" class="header-anchor">#</a> 2. 案例1（正常分区）</h2> <h4 id="场景描述"><a href="#场景描述" class="header-anchor">#</a> 场景描述</h4> <blockquote><p>有一构建记录表，由于数据量较大，每年数据量已经达到300万+，在时间查询中由于特殊原因，还需要关联其他表进行查询，因此查询效率很低，尤其在多条件查询的时候，就算给查询条件增加索引，也会出现查询秒级的情况，因此按照时间进行分区</p></blockquote> <h4 id="分区策略"><a href="#分区策略" class="header-anchor">#</a> 分区策略</h4> <blockquote><p>每年记录分区一次，没季度记录子分区一次（如果后面数据量更大，考虑按照月份进行子分区的可能性）</p></blockquote> <h4 id="表结构"><a href="#表结构" class="header-anchor">#</a> 表结构</h4> <div class="language- extra-class"><pre class="language-text"><code>DROP TABLE IF EXISTS `t_record`;
+CREATE TABLE `t_record` (
+  `name` VARCHAR (255) NOT NULL,
+  `type` VARCHAR (255) NOT NULL,
+  `create_time` DATETIME NOT NULL,
+  INDEX idx_create_time(`create_time`)
+) ;
+</code></pre></div><p>示例数据</p> <p><img src="https://img-blog.csdnimg.cn/20210110220116504.png" alt="在这里插入图片描述"></p> <h4 id="分区sql"><a href="#分区sql" class="header-anchor">#</a> 分区sql</h4> <blockquote><p>分区前</p></blockquote> <p>（1） 只有一个.idb文件</p> <p><img src="https://img-blog.csdnimg.cn/20210110220500305.png" alt="在这里插入图片描述"></p> <p>（2）查询</p> <p><img src="https://img-blog.csdnimg.cn/20210110220745582.png" alt="在这里插入图片描述"></p> <blockquote><p>分区后</p></blockquote> <p>（1）分区sql</p> <div class="language- extra-class"><pre class="language-text"><code>ALTER TABLE t_record 
+PARTITION BY RANGE(YEAR(create_time))
+SUBPARTITION BY HASH(QUARTER(create_time ))
+SUBPARTITIONS 4 (
+    PARTITION p2019 VALUES LESS THAN (2020),
+    PARTITION p2020 VALUES LESS THAN (2021),
+    PARTITION p2021 VALUES LESS THAN maxvalue
+);
+</code></pre></div><p>（2）按照分区分为多个idb了</p> <p><img src="https://img-blog.csdnimg.cn/20210110222109652.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2tvbmdtaW5neGlhb3hpYW8=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p> <div class="language- extra-class"><pre class="language-text"><code>SELECT 
+  partition_name part,
+  partition_expression expr,
+  partition_description descr,
+  table_rows 
+FROM
+  information_schema.partitions 
+WHERE table_schema = SCHEMA() 
+  AND table_name = 't_record' ;
+</code></pre></div><p><img src="https://img-blog.csdnimg.cn/20210110222905811.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2tvbmdtaW5neGlhb3hpYW8=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p> <p>（3）查看执行分区</p> <p><img src="https://img-blog.csdnimg.cn/20210110223709736.png" alt="在这里插入图片描述"></p> <h2 id="_3-案例2-特殊场景"><a href="#_3-案例2-特殊场景" class="header-anchor">#</a> 3. 案例2（特殊场景）</h2> <p>当我们对一个有主键（自增id）的记录表按照时间进行分区的时候，面临的问题就比较尴尬，时间不可能作为唯一索引或者主键（比如存储时间或者创建时间，都有可能重复），我们也很少看到将时间作为主键的（作为普通索引进行区间查询还是比较场景），所以的话这种情况就比较头疼</p> <blockquote><p>这种场景我们可以把id和时间作为一个联合主键</p></blockquote> <h4 id="表结构-2"><a href="#表结构-2" class="header-anchor">#</a> 表结构</h4> <div class="language- extra-class"><pre class="language-text"><code>DROP TABLE IF EXISTS `t_record_id` ;
+
+CREATE TABLE `t_record_id` (
+  `id` INT (8) NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR (255) NOT NULL,
+  `type` VARCHAR (255) NOT NULL,
+  `create_time` DATETIME NOT NULL,
+  PRIMARY KEY (`id`, `create_time`)
+) ENGINE = INNODB AUTO_INCREMENT = 1 DEFAULT CHARSET = utf8;
+</code></pre></div><p><img src="https://img-blog.csdnimg.cn/20210110224435651.png" alt="在这里插入图片描述"></p> <h4 id="分区"><a href="#分区" class="header-anchor">#</a> 分区</h4> <div class="language- extra-class"><pre class="language-text"><code>ALTER TABLE t_record_id 
+PARTITION BY RANGE(YEAR(create_time))
+SUBPARTITION BY HASH(QUARTER(create_time ))
+SUBPARTITIONS 4 (
+    PARTITION p2019 VALUES LESS THAN (2020),
+    PARTITION p2020 VALUES LESS THAN (2021),
+    PARTITION p2021 VALUES LESS THAN maxvalue
+);
+</code></pre></div><p><img src="https://img-blog.csdnimg.cn/20210110224952947.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2tvbmdtaW5neGlhb3hpYW8=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p> <h4 id="查询效率"><a href="#查询效率" class="header-anchor">#</a> 查询效率</h4> <p><img src="https://img-blog.csdnimg.cn/20210110224647148.png" alt="在这里插入图片描述"></p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/chenmingkong/chenmingkong.github.io/edit/master/docs/blog/数据库/mysq基础3-数据表分区.md" target="_blank" rel="noopener noreferrer">在 GitHub 上编辑此页！</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">7/23/2023, 2:37:20 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/数据库/mysq基础2-经典运维工具percona-toolkit.html" class="prev">
+        mysq基础2-经典运维工具percona-toolkit
+      </a></span> <span class="next"><a href="/blog/数据库/mysql基础4-mysql执行过程查看.html">
+        mysql基础4-mysql执行过程查看
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.cba0774c.js" defer></script><script src="/assets/js/2.733019b2.js" defer></script><script src="/assets/js/45.83640054.js" defer></script>
+  </body>
+</html>

@@ -42,6 +42,8 @@ jobs:
         with:
           name: build-pages
           path: docs/.vuepress/dist
+      - name: tree
+        run: tree
       - name: deploy
         uses: JamesIves/github-pages-deploy-action@v4.2.3
         with:

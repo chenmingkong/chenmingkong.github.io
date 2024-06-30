@@ -11,4 +11,4 @@ yarn docs:build
 
 # 进入生成的文件夹
 echo "======begin to push======="
-
+git push -f https://github.com/chenmingkong/chenmingkong.github.io.git gh-pages

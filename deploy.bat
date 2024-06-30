@@ -8,6 +8,4 @@ cd docs/.vuepress/dist
 
 :: git变更及推送
 
-git push -f https://github.com/chenmingkong/knowledge-management.git gh-pages
-
-cd ../../..
+git push -f https://github.com/chenmingkong/chenmingkong.github.io.git gh-pages

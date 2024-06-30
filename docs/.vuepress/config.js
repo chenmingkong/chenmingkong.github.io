@@ -9,6 +9,7 @@ module.exports = {
         nav: [
             {text: 'Home', link: '/'},
             {text: '技术博客', link: '/blog/'},
+            {text: '样例文档', link: '/demo/'},
             {text: '读书分享', link: '/read/'},
             {
                 text: '更多规划',
@@ -33,6 +34,15 @@ module.exports = {
         sidebar: {
             sidebarDepth: 0,
             '/blog/': [
+                {
+                    title: 'AI',
+                    sidebarDepth: 1,
+                    children: [
+                        ['AI/AI使用心得', 'AI使用心得'],
+                        ['AI/AI常用网址', 'AI常用网址'],
+                        ['AI/promptFlow入门', 'promptFlow入门'],
+                    ]
+                },
                 {
                     title: 'C语言',
                     sidebarDepth: 1,
@@ -120,6 +130,18 @@ module.exports = {
                         ['工具/使用rsync和inotify-tools实现服务器文件自动备份', '使用rsync和inotify-tools实现服务器文件自动备份'],
                     ]
                 },
+            ],
+            '/demo/': [
+                {
+                    title: '设计',
+                    sidebarDepth: 1,
+                    children: [
+                        ['设计/需求设计文档', '需求设计文档'],
+                        ['设计/软件设计（4+1视图）文档', '软件设计（4+1视图）文档'],
+                        ['设计/软件设计（简单）文档', '软件设计（简单）文档'],
+                    ]
+                },
+
             ],
             '/read/': [
                 {

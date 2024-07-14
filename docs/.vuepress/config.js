@@ -44,6 +44,13 @@ module.exports = {
                     ]
                 },
                 {
+                    title: '软件工程',
+                    sidebarDepth: 1,
+                    children: [
+                        ['软件工程/北京20247月全球软件技术大会总结', '北京20247月全球软件技术大会总结'],
+                    ]
+                },
+                {
                     title: 'C语言',
                     sidebarDepth: 1,
                     children: [
